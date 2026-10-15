@@ -1,4 +1,17 @@
 #pragma once
+// Windows defines these words as macros; remove them so our names work.
+#ifdef IN
+#undef IN
+#endif
+#ifdef OUT
+#undef OUT
+#endif
+#ifdef FAR
+#undef FAR
+#endif
+#ifdef small
+#undef small
+#endif
 // Geometry Dash level-string constants.
 // Positions and move offsets are in GD units: 30 units = 1 block.
 
